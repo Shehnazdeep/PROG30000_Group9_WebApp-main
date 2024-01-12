@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="/Client/css/main.css">
+</head>
+
+<body>
+    <h1
+        style="font-weight: bold; color: #4a06aa; text-align: center; font-style: italic; text-shadow: 2px 2px 4px #999;">
+        Tutor Connect 📚 </h1>
+    <h1>Tutor Registration</h1>
+    <form id="tutorRegistrationForm">
+        <div>
+            <label for="tutorFirstName">First Name:</label>
+            <input type="text" id="tutorFirstName" name="tutorFirstName" required>
+        </div>
+        <div>
+            <label for="tutorLastName">Last Name:</label>
+            <input type="text" id="tutorLastName" name="tutorLastName" required>
+        </div>
+        <div>
+            <label for="tutorEmail">Email:</label>
+            <input type="email" id="tutorEmail" name="tutorEmail" required>
+        </div>
+        <div>
+            <label for="tutorEducationalBackground">Educational Background:</label>
+            <textarea id="tutorEducationalBackground" name="tutorEducationalBackground" rows="4" required></textarea>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+
+    <p>Already have an account?</p>
+
+    <div id="signInContainer">
+        <h1>Sign In</h1>
+        <form id="signInForm">
+            <label for="signInEmail">Email:</label>
+            <input type="email" id="signInEmail" name="signInEmail" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+
+    <script src="/Client/javascript/tutorRegistration.js"></script>
+</body>
+
+</html>
